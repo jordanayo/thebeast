@@ -1,0 +1,26 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	background-color: #1c1c1c;
+	color: #5c1a1a;
+	font-family: 'Courier New', Courier, monospace;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#gameCanvas {
+	background: linear-gradient(180deg, #290D36 0%, #08080a 80%);
+	border: 2px solid #222;
+	box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+	image-rendering: pixelated;
+	border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+	#gameCanvas {
+		width: 90vw;
+		height: auto;
+	}
+}
